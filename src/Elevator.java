@@ -120,7 +120,7 @@ public class Elevator {
 		//Calculation of number of stops based on remaining person/persons in lobby
 		for (int number : copy) {
 			stop += arr1.size() == number ? stop + 2 : stop++;
-			stop += arr1.size() == number ? copy.size() - 1 : copy.size();
+			stop += arr1.size() == number ? copy.size() : copy.size()+1;
 			break;
 
 		}
